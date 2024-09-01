@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{    
+    background: #000308;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+          
+}
+.card{ 
+    
+    width: 80%;
+    display: flex;
+    align-items: center;     
+    padding: 30px 260px;
+    gap: 50px;
+    color: rgb(243, 227, 9);
+}
+.info{
+    width:40%;
+}
+.info-header{
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+.info-content p{
+    margin-bottom: 10px;
+}
+.info-content b{
+    font-size: 20px;
+    color:white;
+}
+.info-actions{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+}
+.button-1{
+    
+}
+.button-1 i{
+    font-size: 16px;
+}
+.button-1 button{
+    width: 100%;
+    background: #051ef7;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 52px; 
+    padding: 10px 5px;   
+}
+.button-1 button:hover{
+    scale: 1.1;
+}
+.image{
+    width:60%;
+    overflow: hidden;
+    border-radius: 10px; 
+    
+}
+.image img{  
+    border-radius: 10px;    
+    cursor: pointer;  
+    transition: .6s;
+}
+.image img:hover{
+    scale: 1.1;
+}
+.name{
+    font-size: 20px;
+    font-style: italic;
+    color: blue;
+}
+
+@media (max-width:768px){
+    .info{
+        width:100%;
+    }
+    .image{
+        width:100%
+    }
+    .card{
+        flex-direction: column-reverse;
+        height: 100vh;
+        /* margin: 0px 50px; */
+    }
+    .container{
+        padding: 50px 0;
+    }
+}    
